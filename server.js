@@ -8,11 +8,11 @@ app.use(router)
 const server = http.createServer(app)
 const corsOptions = {
   cors: true,
-  origins: ['http://localhost:3000'],
+  origins: ['https://fun-chat-omer.netlify.app/'],
 }
 const io = new Server(server, corsOptions)
 
-const PORT = process.env.PORT || 5000
+export const PORT = process.env.PORT || 5000
 
 app.use(router)
 
